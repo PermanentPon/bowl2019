@@ -17,6 +17,7 @@ class InputDataLoader:
     @property
     def train_df(self):
         if self._train_df is None:
+            print('Loading train data ...')
             start_time = time.time()
             if 'train.pkl' in os.listdir(self.data_folder):
                 self._train_df = pickle.load(open(os.path.join(self.data_folder, 'train.pkl'), 'rb'))
@@ -30,6 +31,7 @@ class InputDataLoader:
     @property
     def test_df(self):
         if self._test_df is None:
+            print('Loading test data ...')
             start_time = time.time()
             if 'test.pkl' in os.listdir(self.data_folder):
                 self._test_df = pickle.load(open(os.path.join(self.data_folder, 'test.pkl'), 'rb'))

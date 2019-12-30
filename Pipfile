@@ -12,6 +12,9 @@ sklearn = "*"
 click = "*"
 numba = "*"
 jupyter = "*"
+category-encoders = "*"
+catboost = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.6"
